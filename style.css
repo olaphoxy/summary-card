@@ -135,7 +135,7 @@ body{
 }
 @media(max-width: 375px){
     body{
-        background: url('../images/pattern-background-mobile.svg')no-repeat;
+        background: url('images/pattern-background-mobile.svg')no-repeat;
         background-color: var(--bg-primary);
         background-size: contain;
         font-size: 0.75rem;
