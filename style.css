@@ -38,7 +38,7 @@
 
 body{
     font-family: 'Red Hat Display';
-    background: url('../images/pattern-background-desktop.svg')no-repeat;
+    background: url('images/pattern-background-desktop.svg')no-repeat;
     background-size: contain;
     background-color: var(--bg-primary);
    
