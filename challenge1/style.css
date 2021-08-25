@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --bg-primary: hsl(225, 100%, 94%);
+   --bg-secondary: hsl(245, 75%, 52%);
+    --bg-light:hsl(225, 100%, 98%);
+   --text-light: hsl(224, 23%, 55%);
+   --text-dark: hsl(223, 47%, 23%);
+    --fonts: 16px;
+    --bold-1: 500;
+    --bold-2: 700;
+    --bold-3: 900;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+.text-dark{
+    color: var(--text-dark);
+    font-weight: var(--bold-3);
+}
+.text-light{
+    color: var(--text-light);
+    line-height: 1.6;
+}
+.decor{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Red Hat Display';
+    background: url('../images/pattern-background-desktop.svg')no-repeat;
+    background-size: contain;
+    background-color: var(--bg-primary);
+   
+  
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    /* height: 100vh;    */
+}
+.container .case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 420px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    
+}
+
+.case > img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.order_summary{
+    padding: 20px;
+    margin: 10px;
+}
+.order_summary >h1{
+    margin-bottom: 10px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    
+    
+}
+.box a{
+    font-weight: var(--bold-2);
+    color:var(--bg-secondary);
+    transition: all 0.1s ease;
+}
+.box a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+.inner-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-box > img{
+    margin-right: 15px;
+}
+
+.btn{
+    display: block;
+    padding: 14px 20px;
+    width: 80%;
+    background: var(--bg-secondary);
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    box-shadow: 0px 15px 15px rgba(42, 41, 58, 0.2);
+    border: none;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.last-btn{
+    margin: 20px 0 40px;
+    color: var(--text-light);
+    font-weight: var(--bold-2);
+    transition: all 0.1s ease;
+}
+.last-btn:hover{
+    color:var(--text-dark)
+}
+@media(max-width: 375px){
+    body{
+        background: url('../images/pattern-background-mobile.svg')no-repeat;
+        background-color: var(--bg-primary);
+        background-size: contain;
+        font-size: 0.75rem;
+        
+        
+    }
+    .container{
+        margin: 20px 0;
+    }
+    .box{
+        width: 85%;
+        padding: 10px;
+    }
+    .btn{
+        width: 85%;
+    }
+    .inner-box > img{
+        margin-right: 10px;
+    }
+
+}
